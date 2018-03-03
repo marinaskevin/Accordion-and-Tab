@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion and Tab</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $( "#accordion" ).accordion();
+            $( "#tabs" ).tabs();
+        })
+    </script>
+    <style>
+        body
+        {
+            padding: 20px;
+        }
+        h1
+        {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accordion Widget</h1>
+
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p><i>Here a section is represented by a <code>div</code> tag</i>. Each <code>div</code> is inside a <code>div</code> with with id <code>accordion</code>. The code included in the script tag is:</p><code>$( "#accordion" ).accordion();</code>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+            Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+            faucibus interdum tellus libero ac justo.</p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+            Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+            <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>Tab Widget</h1>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#fragment-1"><span>One</span></a></li>
+            <li><a href="#fragment-2"><span>Two</span></a></li>
+            <li><a href="#fragment-3"><span>Three</span></a></li>
+        </ul>
+        <div id="fragment-1">
+            <p><i>Here a tab is represented by an <code>li</code> and a <code>div</code> tag.</i> This paragraph is inside a <code>div</code> with id <code>fragment-1</code> which in turn is linked to by an anchor tag with an href attribute of <code>#fragment-1</code> inside <code>li</code> and <code>ul</code> tags inside a <code>div</code> with an id of <code>tabs</code>.
+            <p>The first tab is active by default:</p>
+            <pre><code>$( "#tabs" ).tabs();</code></pre>
+        </div>
+        <div id="fragment-2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </div>
+        <div id="fragment-3">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </div>
+    </div>
+
+</body>
+</html>
